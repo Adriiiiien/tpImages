@@ -1,0 +1,89 @@
+/* Reset & font */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Conteneur */
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Titre */
+.container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+/* Zone drag & drop */
+.upload-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 40px 20px;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #555;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Texte à l’intérieur */
+.upload-box p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Effet quand on glisse un fichier */
+.upload-box.dragover {
+  border-color: #007bff;
+  background-color: #e6f0ff;
+}
+
+/* Input caché */
+.upload-box input[type="file"] {
+  display: none;
+}
+
+/* Bouton */
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Statut */
+#status {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}

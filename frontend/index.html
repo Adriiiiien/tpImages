@@ -1,1 +1,30 @@
-Page pr le formulaire d'upload
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload de documents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Envoyer un fichier</h1>
+
+        <!-- Zone drag & drop -->
+        <label class="upload-box" id="uploadBox">
+            <p>Glissez-déposez votre fichier ici ou cliquez pour sélectionner</p>
+            <input type="file" id="fileInput" name="document" accept=".txt,.pdf,.jpg,.png" required>
+        </label>
+
+        <!-- Bouton upload -->
+        <button id="uploadBtn">Uploader</button>
+
+        <!-- Statut -->
+        <div id="status"></div>
+    </div>
+
+    <script src="js/upload.js"></script>
+</body>
+
+</html>
